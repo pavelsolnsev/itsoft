@@ -1,73 +1,28 @@
 $(function() {
 
-		$('.offer').owlCarousel({
-		loop: true,
-		items: 1,
-		infinity: true,
-		smartSpeed: 700
+    $('#my-menu').mmenu({
+        extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black' ],
+    });
+
+    var api = $('#my-menu').data('mmenu');
+    api.bind('opened', function () {
+        $('.hamburger').addClass('is-active');
+    }).bind('closed', function () {
+        $('.hamburger').removeClass('is-active');
+    });
+
+   	$('.slider').owlCarousel({
+			loop: true,
+			items: 1,
+			nav: true,
+			navText: ['<i class="fa fa-long-arrow-alt-left"></i>','<i class="fa fa-long-arrow-alt-right"></i>'],
+			infinity: true,
+			smartSpeed: 700
 	});
 
-		$('.content').owlCarousel({
-    loop: true,
-    dots: false,
-    margin: 30,
-    nav: true,
-		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    responsive:{
-    	   0:{
-            items:1
-        },
-        576:{
-            items:2
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:4
-        }
-    }
-})
-		$('.slider').owlCarousel({
-    loop: true,
-    dots: false,
-    nav: true,
-		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    responsive:{
-    	   0:{
-            items:1
-        },
-        576:{
-            items:2
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:4
-        },
-         1200:{
-            items:5
-        }
-    }
-})
-
-    $('#buttonModal').click(function() {
-		$('#menuModal').addClass('menu-modal_active');
-	});
-
-	    $('#menuModalClose').click(function() {
-		$('#menuModal').removeClass('menu-modal_active');
-	});
-
-	    $('#buttonModalTwo').click(function() {
-		$('#menuModalTwo').addClass('menu-modal_active');
-	});
-
-	  	$('#menuModalCloseTwo').click(function() {
-		$('#menuModalTwo').removeClass('menu-modal_active');
-	});
-
+   	$ ('.owl-dot').each (function () {
+$ (this).children('span').text($(this).index() + 1);
+});
 
 });
 

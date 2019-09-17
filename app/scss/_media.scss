@@ -5,22 +5,91 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.slider__item {
+		flex-direction: column;
+		padding-right: 40px;
+	}
 
+	.slider__picture {
+		margin: 0 auto;
+	}
+
+	.slider__content {
+		margin-bottom: 80px;
+		margin-right: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+
+	.hamburger {
+		display: block;
+		margin-right: 15px;
+	}
+
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+		background-color: #005494;
+	}
+
+	.sideNav {
+		display: none;
+	}
+
+	main {
+		margin-left: 0;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	
+	.slider__title {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	.slider__content {
+		p {
+			font-size: 13px;
+			padding-left: 0;
+		}
+	}
+
+		.slider__picture {
+			margin-bottom: 25px;
+		img {
+			width: 80% !important;
+			margin: 0 auto;
+		}
+		p {
+			padding: 0;
+		}
+	}
+
+
+	.header__logo, .header__symbol {
+		display: none;
+	}
+
+	.offer__item {
+		width: 100%;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px) {
-
+	.slider__picture {
+		p {
+			margin-top: 0;
+		}
+	}
+	.offer__block-hover {
+		h2 {  
+	    right: 11px;
+	    top: 15px;
+    }
+	}
 }
 
 

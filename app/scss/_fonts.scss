@@ -1,4 +1,5 @@
 @import "_mixins/font-face";
 
-@include font-face("Circe", "../fonts/Circe-Regular");
-@include font-face("Circe", "../fonts/Circe-Bold", bold);
+@include font-face("OpenSans", "../fonts/OpenSans-Light/OpenSans-Light");
+@include font-face("OpenSansItalic", "../fonts/OpenSansLight-Italic/OpenSansLight-Italic", italic);
+@include font-face("OpenSansExtrabold", "../fonts/OpenSansExtrabold/OpenSans-Extrabold");
