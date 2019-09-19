@@ -20,10 +20,15 @@ $(function() {
 			smartSpeed: 700
 	});
 
-   	$ ('.owl-dot').each (function () {
-$ (this).children('span').text($(this).index() + 1);
-});
+   	$('.owl-dot').each (function () {
+			$ (this).children('span').text($(this).index() + 1);
+	});
 
+		 $('.about__item').on('click', function(e){
+		 		e.preventDefault();
+		    $('.about__item.active').removeClass('active');
+		    $(this).addClass('active');
+		});
 });
 
 

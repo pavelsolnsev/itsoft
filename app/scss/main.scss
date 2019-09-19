@@ -22,6 +22,7 @@ body {
 	color: $dark;
 	margin: 0;
 	padding: 0;
+	background: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,8 +37,7 @@ h1 {
 }
 
 h2 {
-	color: #afc6d8;
-	font-family: "OpenSansExtrabold", sans-serif;
+	font-size: 24px;
 }
 
 h3 {
@@ -239,6 +239,7 @@ figure {
 .hamburger {
 	padding: 0;
 	display: none;
+	cursor: pointer;
 }
 
 /*------SECTION OFFER-------*/
@@ -287,6 +288,8 @@ figure {
 		position: absolute;
 		right: 33px;
 		top: 40px;
+		font-family: "OpenSansExtrabold", sans-serif;
+		color: #afc6d8;
 	}
 }
 
@@ -324,7 +327,7 @@ figure {
 	}
 }
 
-.offer__btn {
+.btn {
 	margin-left: auto;
 	font-size: 13px;
 	color: #97b9d1;
@@ -333,6 +336,7 @@ figure {
 	text-align: center;
 	width: 118px;
 	padding: 8px 0;
+	display: block;
 	&:hover {
 		background: #a1c1d6;
 		color: #fff;
@@ -342,7 +346,7 @@ figure {
 
 /*------SECTION SLIDER-------*/
 
-.section {
+.section-slider {
 	background: #d1e4f3;
 	padding: 67px 0 50px 0;
 }
@@ -401,13 +405,13 @@ figure {
 	position: relative;
 	 &:after {
 	 	content: '';
-	 	width: 14px;
+	 	width: 16px;
 	 	height: 2px;
 	 	display: inline-block;
 	 	background:  #005494;
 	 	position: absolute;
 	 	top: 50%;
-	 	right: -7px;
+	 	right: -8px;
 	 }
 	 &:last-child {
 	 	&:after {
@@ -464,6 +468,196 @@ figure {
 	}
 	img {
 		width: auto !important;
+	}
+}
+
+/*------SECTION ABOUT-------*/
+
+.about {
+	background: url(../img/fon.jpg) center center/cover no-repeat;
+	padding: 50px 0;
+}
+
+.about__wrap {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__title {
+	color: #fff;
+}
+
+.about__content {
+	margin: 70px 70px 117px 0;
+	width: 500px;
+	align-self: flex-end;
+	h2 {
+		color: #fff;
+	}
+
+	p {
+		color: #fff;
+		font-family: "OpenSansLight", sans-serif;
+		margin: 25px 0;
+	}
+}
+
+.about__list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	justify-content: center;
+}
+
+.about__item {
+	background: #fff;
+	border-radius: 12px;
+	text-align: center;
+	padding: 6px 10px;
+	margin: 6px 6px;
+}
+
+.about__link {
+	color: #005494;
+	font-size: 11px;
+}
+
+.about__btn {
+	color: #fff;
+	border: 2px solid #fff;
+	margin: 0;
+	&:hover {
+		background: #fff;
+		color: #013869;
+	}
+}
+
+.about { 
+	.active {
+		background: #0c6db6;
+		.about__link {
+			color: #fff;
+		}
+	}
+}
+
+/*------SECTION SERVICES-------*/
+
+.services {
+	box-shadow: 0px 8px 18px -8px rgba(16,117,191,0.21);
+}
+
+.services__block { 
+	padding: 87px 30px 40px 30px;
+	width: 50%;
+	height: 600px;
+}
+
+.services__wrap {
+	display: flex;
+}
+
+.services__block_fon {
+	background: url(../img/fon-blue.jpg) center center/cover no-repeat;
+}
+
+.services__btn {
+	width: 246px;
+	padding: 20px 0;
+	border-radius: 40px;
+	border: 2px solid #005495 ;
+	color: #005495;
+	font-size: 28px;
+	margin: 0 auto;
+	&:hover {
+		background: #005495;
+		color: #fff;
+	}
+}
+
+.services__block_white {
+	color: #fff;
+	border: 2px solid #fff;
+	&:hover {
+		background: #fff;
+		color: #005495;
+	}
+}
+
+.services__content {
+	width: 420px;
+	margin-bottom: 50px;
+}
+
+.services__chek {
+	display: flex;
+	width: 446px;
+	margin-left: auto;
+	margin-top: 150px;
+	img {
+		width: 30px;
+		height: 30px;
+		margin-right: 20px;
+	}
+}
+
+/*------SECTION INSTRUCTION-------*/
+
+.instruction {
+	padding: 45px 0;
+	box-shadow: 0px 8px 18px -8px rgba(16,117,191,0.21);
+	.container {
+		text-align: center;
+		p {
+			display: block;
+			font-size: 40px;
+			font-family: 'Open Sans Condensed', sans-serif;
+			color: #b6b6b6;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/*------FOOTER-------*/
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Ubuntu', sans-serif;
+	color: #929292;
+	font-size: 12px;
+	padding: 50px 0;
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.footer__text {
+	p {
+		&:first-child {
+			margin-bottom: 2px;
+		}
+	}
+}
+
+.footer__wrap {
+	p {
+		span {
+			font-style: italic;
+			font-weight: bold;
+		}
+		&:first-child {
+			margin-bottom: 2px;
+			border-bottom: 1px solid #929292; 
+		}
 	}
 }
 

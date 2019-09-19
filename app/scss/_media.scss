@@ -18,6 +18,25 @@
 		margin-bottom: 80px;
 		margin-right: 0;
 	}
+
+	.about__content {
+		margin-right: 0;
+	}
+
+	.services__wrap {
+		flex-direction: column;
+	}
+
+	.services__block {
+		width: 100%;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+
+	.services__chek {
+		margin-top: 120px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -38,6 +57,14 @@
 
 	main {
 		margin-left: 0;
+	}
+
+	.footer {
+		flex-direction: column;
+	}
+
+	.footer__text {
+		margin: 30px 0;
 	}
 }
 
@@ -89,6 +116,69 @@
 	    right: 11px;
 	    top: 15px;
     }
+	}
+
+	.offer__btn {
+		display: none;
+	}
+
+	.about__wrap {
+		padding: 0 4%;
+	}
+
+	.about__content, .about__list {
+		width: auto;
+	}
+
+	.about__title {
+		font-size: 35px;
+	}
+
+	.about__link {
+		font-size: 10px;
+	}
+
+	.about__content {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		h2 {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
+
+	.services__content, .services__chek {
+		width: auto;
+	}
+
+	.services__block {
+		padding-top: 40px;
+		height: 500px;
+	}
+
+	.services__chek {
+		margin-top: 70px;
+	}
+
+	.services__title {
+		font-size: 35px;
+	}
+
+	.footer__text {
+		p {
+			font-size: 10px;
+		}
+	}
+
+	.instruction {
+		.container {
+			p {
+				font-size: 35px;
+			}
+		}
 	}
 }
 
